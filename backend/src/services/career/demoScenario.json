@@ -1,0 +1,1915 @@
+{
+  "id": "demo-template",
+  "userId": "demo-user",
+  "createdAt": "1970-01-01T00:00:00.000Z",
+  "mode": "demo",
+  "status": "completed",
+  "profile": {
+    "name": "Alex",
+    "currentRole": "Full Stack Developer",
+    "yearsExperience": 9,
+    "industry": "Software",
+    "learningHoursPerWeek": 8,
+    "skills": [
+      "C#",
+      "Angular",
+      "TypeScript",
+      "SQL",
+      "Azure",
+      "API Development",
+      "Docker"
+    ]
+  },
+  "targetRoleId": "R009",
+  "targetRoleName": "AI Engineer",
+  "learningHoursPerWeek": 8,
+  "steps": {
+    "neo4j": {
+      "id": "neo4j",
+      "label": "Neo4j graph analysis",
+      "status": "demo",
+      "detail": "Computed offline from the starter dataset CSVs"
+    },
+    "nosana": {
+      "id": "nosana",
+      "label": "Nosana AI reasoning",
+      "status": "demo",
+      "detail": "Fixture text validated against the graph"
+    },
+    "daytona": {
+      "id": "daytona",
+      "label": "Daytona sandbox computation",
+      "status": "demo",
+      "detail": "analysis.py executed locally, not in Daytona"
+    },
+    "compose": {
+      "id": "compose",
+      "label": "Compose career analysis",
+      "status": "demo"
+    },
+    "persist": {
+      "id": "persist",
+      "label": "Persist result",
+      "status": "skipped",
+      "error": "Demo analyses are kept in memory only"
+    }
+  },
+  "events": [],
+  "graph": {
+    "userId": "demo-user",
+    "targetRole": {
+      "id": "R009",
+      "name": "AI Engineer",
+      "description": "Builds applications powered by AI and language models",
+      "seniority": "Intermediate",
+      "elementId": "demo:R009"
+    },
+    "matchedSkills": [
+      {
+        "id": "SK017",
+        "name": "API Development",
+        "category": "Software Engineering",
+        "level": "Intermediate",
+        "elementId": "demo:SK017",
+        "importance": "Required",
+        "proficiencyRequired": "Intermediate",
+        "proficiencyDerived": true,
+        "relationshipId": "demo:REQ:R009>SK017"
+      }
+    ],
+    "missingSkills": [
+      {
+        "id": "SK012",
+        "name": "Generative AI",
+        "category": "AI",
+        "level": "Intermediate",
+        "elementId": "demo:SK012",
+        "importance": "Required",
+        "proficiencyRequired": "Intermediate",
+        "proficiencyDerived": true,
+        "relationshipId": "demo:REQ:R009>SK012"
+      },
+      {
+        "id": "SK013",
+        "name": "LLM Application Development",
+        "category": "AI",
+        "level": "Advanced",
+        "elementId": "demo:SK013",
+        "importance": "Required",
+        "proficiencyRequired": "Advanced",
+        "proficiencyDerived": true,
+        "relationshipId": "demo:REQ:R009>SK013"
+      },
+      {
+        "id": "SK014",
+        "name": "Prompt Engineering",
+        "category": "AI",
+        "level": "Beginner",
+        "elementId": "demo:SK014",
+        "importance": "Required",
+        "proficiencyRequired": "Beginner",
+        "proficiencyDerived": true,
+        "relationshipId": "demo:REQ:R009>SK014"
+      },
+      {
+        "id": "SK002",
+        "name": "Python",
+        "category": "Programming",
+        "level": "Beginner",
+        "elementId": "demo:SK002",
+        "importance": "Required",
+        "proficiencyRequired": "Beginner",
+        "proficiencyDerived": true,
+        "relationshipId": "demo:REQ:R009>SK002"
+      },
+      {
+        "id": "SK031",
+        "name": "Model Evaluation",
+        "category": "AI",
+        "level": "Intermediate",
+        "elementId": "demo:SK031",
+        "importance": "Recommended",
+        "proficiencyRequired": "Intermediate",
+        "proficiencyDerived": true,
+        "relationshipId": "demo:REQ:R009>SK031"
+      }
+    ],
+    "prerequisiteGapSkills": [
+      {
+        "id": "SK010",
+        "name": "Machine Learning",
+        "category": "AI",
+        "level": "Advanced",
+        "elementId": "demo:SK010",
+        "userHas": false,
+        "implied": false
+      },
+      {
+        "id": "SK008",
+        "name": "Statistics",
+        "category": "Data",
+        "level": "Intermediate",
+        "elementId": "demo:SK008",
+        "userHas": false,
+        "implied": false
+      }
+    ],
+    "prerequisites": [
+      {
+        "id": "demo:PRE:SK010>SK012",
+        "prerequisiteId": "SK010",
+        "prerequisiteName": "Machine Learning",
+        "targetId": "SK012",
+        "targetName": "Generative AI"
+      },
+      {
+        "id": "demo:PRE:SK012>SK013",
+        "prerequisiteId": "SK012",
+        "prerequisiteName": "Generative AI",
+        "targetId": "SK013",
+        "targetName": "LLM Application Development"
+      },
+      {
+        "id": "demo:PRE:SK014>SK013",
+        "prerequisiteId": "SK014",
+        "prerequisiteName": "Prompt Engineering",
+        "targetId": "SK013",
+        "targetName": "LLM Application Development"
+      },
+      {
+        "id": "demo:PRE:SK002>SK010",
+        "prerequisiteId": "SK002",
+        "prerequisiteName": "Python",
+        "targetId": "SK010",
+        "targetName": "Machine Learning"
+      },
+      {
+        "id": "demo:PRE:SK008>SK010",
+        "prerequisiteId": "SK008",
+        "prerequisiteName": "Statistics",
+        "targetId": "SK010",
+        "targetName": "Machine Learning"
+      },
+      {
+        "id": "demo:PRE:SK013>SK031",
+        "prerequisiteId": "SK013",
+        "prerequisiteName": "LLM Application Development",
+        "targetId": "SK031",
+        "targetName": "Model Evaluation"
+      },
+      {
+        "id": "demo:PRE:SK010>SK031",
+        "prerequisiteId": "SK010",
+        "prerequisiteName": "Machine Learning",
+        "targetId": "SK031",
+        "targetName": "Model Evaluation"
+      },
+      {
+        "id": "demo:PRE:SK001>SK002",
+        "prerequisiteId": "SK001",
+        "prerequisiteName": "Programming Fundamentals",
+        "targetId": "SK002",
+        "targetName": "Python"
+      }
+    ],
+    "learningOrder": [
+      {
+        "skill": {
+          "id": "SK014",
+          "name": "Prompt Engineering",
+          "category": "AI",
+          "level": "Beginner",
+          "elementId": "demo:SK014",
+          "userHas": false,
+          "implied": false
+        },
+        "order": 1,
+        "depth": 0,
+        "prerequisiteIds": [],
+        "inCycle": false
+      },
+      {
+        "skill": {
+          "id": "SK002",
+          "name": "Python",
+          "category": "Programming",
+          "level": "Beginner",
+          "elementId": "demo:SK002",
+          "userHas": false,
+          "implied": false
+        },
+        "order": 2,
+        "depth": 0,
+        "prerequisiteIds": [],
+        "inCycle": false
+      },
+      {
+        "skill": {
+          "id": "SK008",
+          "name": "Statistics",
+          "category": "Data",
+          "level": "Intermediate",
+          "elementId": "demo:SK008",
+          "userHas": false,
+          "implied": false
+        },
+        "order": 3,
+        "depth": 0,
+        "prerequisiteIds": [],
+        "inCycle": false
+      },
+      {
+        "skill": {
+          "id": "SK010",
+          "name": "Machine Learning",
+          "category": "AI",
+          "level": "Advanced",
+          "elementId": "demo:SK010",
+          "userHas": false,
+          "implied": false
+        },
+        "order": 4,
+        "depth": 1,
+        "prerequisiteIds": [
+          "SK002",
+          "SK008"
+        ],
+        "inCycle": false
+      },
+      {
+        "skill": {
+          "id": "SK012",
+          "name": "Generative AI",
+          "category": "AI",
+          "level": "Intermediate",
+          "elementId": "demo:SK012",
+          "userHas": false,
+          "implied": false
+        },
+        "order": 5,
+        "depth": 2,
+        "prerequisiteIds": [
+          "SK010"
+        ],
+        "inCycle": false
+      },
+      {
+        "skill": {
+          "id": "SK013",
+          "name": "LLM Application Development",
+          "category": "AI",
+          "level": "Advanced",
+          "elementId": "demo:SK013",
+          "userHas": false,
+          "implied": false
+        },
+        "order": 6,
+        "depth": 3,
+        "prerequisiteIds": [
+          "SK012",
+          "SK014"
+        ],
+        "inCycle": false
+      },
+      {
+        "skill": {
+          "id": "SK031",
+          "name": "Model Evaluation",
+          "category": "AI",
+          "level": "Intermediate",
+          "elementId": "demo:SK031",
+          "userHas": false,
+          "implied": false
+        },
+        "order": 7,
+        "depth": 4,
+        "prerequisiteIds": [
+          "SK013",
+          "SK010"
+        ],
+        "inCycle": false
+      }
+    ],
+    "recommendedCourses": [
+      {
+        "id": "C008",
+        "name": "Build LLM Applications",
+        "description": "LLM APIs, tool calling and app patterns",
+        "level": "Intermediate",
+        "estimatedHours": 12,
+        "teachesSkillIds": [
+          "SK012",
+          "SK013"
+        ],
+        "teachesSkillNames": [
+          "Generative AI",
+          "LLM Application Development"
+        ],
+        "elementId": "demo:C008"
+      },
+      {
+        "id": "C004",
+        "name": "Machine Learning Foundations",
+        "description": "Supervised and unsupervised learning",
+        "level": "Intermediate",
+        "estimatedHours": 18,
+        "teachesSkillIds": [
+          "SK008",
+          "SK010"
+        ],
+        "teachesSkillNames": [
+          "Statistics",
+          "Machine Learning"
+        ],
+        "elementId": "demo:C004"
+      },
+      {
+        "id": "C017",
+        "name": "MLOps in Practice",
+        "description": "Model deployment, monitoring and lifecycle",
+        "level": "Advanced",
+        "estimatedHours": 14,
+        "teachesSkillIds": [
+          "SK010",
+          "SK031"
+        ],
+        "teachesSkillNames": [
+          "Machine Learning",
+          "Model Evaluation"
+        ],
+        "elementId": "demo:C017"
+      },
+      {
+        "id": "C015",
+        "name": "Data Engineering Foundations",
+        "description": "Data pipelines, ingestion and quality",
+        "level": "Intermediate",
+        "estimatedHours": 12,
+        "teachesSkillIds": [
+          "SK002"
+        ],
+        "teachesSkillNames": [
+          "Python"
+        ],
+        "elementId": "demo:C015"
+      },
+      {
+        "id": "C005",
+        "name": "Deep Learning Essentials",
+        "description": "Neural networks and model training",
+        "level": "Advanced",
+        "estimatedHours": 16,
+        "teachesSkillIds": [
+          "SK010"
+        ],
+        "teachesSkillNames": [
+          "Machine Learning"
+        ],
+        "elementId": "demo:C005"
+      },
+      {
+        "id": "C006",
+        "name": "Generative AI Fundamentals",
+        "description": "LLMs, tokens and inference concepts",
+        "level": "Beginner",
+        "estimatedHours": 6,
+        "teachesSkillIds": [
+          "SK012"
+        ],
+        "teachesSkillNames": [
+          "Generative AI"
+        ],
+        "elementId": "demo:C006"
+      },
+      {
+        "id": "C003",
+        "name": "Practical Statistics",
+        "description": "Descriptive statistics and probability",
+        "level": "Intermediate",
+        "estimatedHours": 8,
+        "teachesSkillIds": [
+          "SK008"
+        ],
+        "teachesSkillNames": [
+          "Statistics"
+        ],
+        "elementId": "demo:C003"
+      },
+      {
+        "id": "C007",
+        "name": "Prompt Engineering Workshop",
+        "description": "Prompt patterns and structured outputs",
+        "level": "Beginner",
+        "estimatedHours": 4,
+        "teachesSkillIds": [
+          "SK014"
+        ],
+        "teachesSkillNames": [
+          "Prompt Engineering"
+        ],
+        "elementId": "demo:C007"
+      },
+      {
+        "id": "C001",
+        "name": "Python for Developers",
+        "description": "Python basics, functions, data structures",
+        "level": "Beginner",
+        "estimatedHours": 8,
+        "teachesSkillIds": [
+          "SK002"
+        ],
+        "teachesSkillNames": [
+          "Python"
+        ],
+        "elementId": "demo:C001"
+      },
+      {
+        "id": "C009",
+        "name": "RAG Application Development",
+        "description": "Embeddings, retrieval and grounding",
+        "level": "Advanced",
+        "estimatedHours": 12,
+        "teachesSkillIds": [
+          "SK013"
+        ],
+        "teachesSkillNames": [
+          "LLM Application Development"
+        ],
+        "elementId": "demo:C009"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "CERT006",
+        "name": "Databricks Generative AI Engineer Associate",
+        "validatesSkillIds": [
+          "SK012",
+          "SK013"
+        ],
+        "validatesSkillNames": [
+          "Generative AI",
+          "LLM Application Development"
+        ],
+        "elementId": "demo:CERT006",
+        "relevance": "closes_gap"
+      },
+      {
+        "id": "CERT008",
+        "name": "TensorFlow Developer Certificate (sample pathway)",
+        "validatesSkillIds": [
+          "SK002",
+          "SK010"
+        ],
+        "validatesSkillNames": [
+          "Python",
+          "Machine Learning"
+        ],
+        "elementId": "demo:CERT008",
+        "relevance": "closes_gap"
+      },
+      {
+        "id": "CERT002",
+        "name": "Azure Developer Associate",
+        "validatesSkillIds": [
+          "SK017"
+        ],
+        "validatesSkillNames": [
+          "API Development"
+        ],
+        "elementId": "demo:CERT002",
+        "relevance": "validates_existing"
+      }
+    ],
+    "relatedRoles": [
+      {
+        "id": "R002",
+        "name": "Backend Engineer",
+        "description": "Builds APIs and server-side systems",
+        "seniority": "Intermediate",
+        "elementId": "demo:R002",
+        "relationshipType": "Adjacent transition",
+        "direction": "incoming"
+      },
+      {
+        "id": "R001",
+        "name": "Full Stack Developer",
+        "description": "Builds frontend and backend applications",
+        "seniority": "Intermediate",
+        "elementId": "demo:R001",
+        "relationshipType": "Adjacent transition",
+        "direction": "incoming"
+      },
+      {
+        "id": "R010",
+        "name": "Generative AI Engineer",
+        "description": "Builds LLM-powered products and workflows",
+        "seniority": "Advanced",
+        "elementId": "demo:R010",
+        "relationshipType": "Specialization",
+        "direction": "outgoing"
+      }
+    ],
+    "alternativeRoles": [
+      {
+        "id": "R002",
+        "name": "Backend Engineer",
+        "description": "Builds APIs and server-side systems",
+        "seniority": "Intermediate",
+        "elementId": "demo:R002",
+        "requiredSkillCount": 7,
+        "matchedSkillCount": 4,
+        "matchPercentage": 57,
+        "missingSkills": [
+          "Git",
+          "System Design",
+          "Backend Development"
+        ],
+        "relatedRoles": [
+          "AI Engineer",
+          "Full Stack Developer"
+        ],
+        "sharedSkillCountWithTarget": 1,
+        "connection": [
+          "Related to the target role",
+          "Related to your current role",
+          "Shares 1 required skills with the target"
+        ]
+      },
+      {
+        "id": "R003",
+        "name": "Frontend Engineer",
+        "description": "Builds user-facing web applications",
+        "seniority": "Intermediate",
+        "elementId": "demo:R003",
+        "requiredSkillCount": 7,
+        "matchedSkillCount": 2,
+        "matchPercentage": 29,
+        "missingSkills": [
+          "Frontend Development",
+          "HTML & CSS",
+          "JavaScript",
+          "React",
+          "Git"
+        ],
+        "relatedRoles": [
+          "Full Stack Developer"
+        ],
+        "sharedSkillCountWithTarget": 0,
+        "connection": [
+          "Related to the target role",
+          "Related to your current role"
+        ]
+      },
+      {
+        "id": "R010",
+        "name": "Generative AI Engineer",
+        "description": "Builds LLM-powered products and workflows",
+        "seniority": "Advanced",
+        "elementId": "demo:R010",
+        "requiredSkillCount": 7,
+        "matchedSkillCount": 0,
+        "matchPercentage": 0,
+        "missingSkills": [
+          "Generative AI",
+          "LLM Application Development",
+          "Prompt Engineering",
+          "Python",
+          "RAG Systems",
+          "Model Evaluation",
+          "Vector Databases"
+        ],
+        "relatedRoles": [
+          "AI Engineer"
+        ],
+        "sharedSkillCountWithTarget": 5,
+        "connection": [
+          "Related to the target role",
+          "Related to your current role",
+          "Shares 5 required skills with the target"
+        ]
+      }
+    ],
+    "graphPaths": [],
+    "userSkills": [
+      {
+        "id": "SK038",
+        "name": "Angular",
+        "category": "Software Engineering",
+        "level": "Intermediate",
+        "elementId": "demo:SK038",
+        "proficiencyLevel": "Intermediate",
+        "yearsExperience": null,
+        "relationshipId": "demo:HAS:demo-user>SK038"
+      },
+      {
+        "id": "SK017",
+        "name": "API Development",
+        "category": "Software Engineering",
+        "level": "Intermediate",
+        "elementId": "demo:SK017",
+        "proficiencyLevel": "Intermediate",
+        "yearsExperience": null,
+        "relationshipId": "demo:HAS:demo-user>SK017"
+      },
+      {
+        "id": "SK024",
+        "name": "Azure",
+        "category": "Cloud & DevOps",
+        "level": "Intermediate",
+        "elementId": "demo:SK024",
+        "proficiencyLevel": "Intermediate",
+        "yearsExperience": null,
+        "relationshipId": "demo:HAS:demo-user>SK024"
+      },
+      {
+        "id": "SK003",
+        "name": "C#",
+        "category": "Programming",
+        "level": "Intermediate",
+        "elementId": "demo:SK003",
+        "proficiencyLevel": "Intermediate",
+        "yearsExperience": null,
+        "relationshipId": "demo:HAS:demo-user>SK003"
+      },
+      {
+        "id": "SK020",
+        "name": "Docker",
+        "category": "Cloud & DevOps",
+        "level": "Intermediate",
+        "elementId": "demo:SK020",
+        "proficiencyLevel": "Intermediate",
+        "yearsExperience": null,
+        "relationshipId": "demo:HAS:demo-user>SK020"
+      },
+      {
+        "id": "SK006",
+        "name": "SQL",
+        "category": "Data",
+        "level": "Beginner",
+        "elementId": "demo:SK006",
+        "proficiencyLevel": "Intermediate",
+        "yearsExperience": null,
+        "relationshipId": "demo:HAS:demo-user>SK006"
+      },
+      {
+        "id": "SK005",
+        "name": "TypeScript",
+        "category": "Programming",
+        "level": "Intermediate",
+        "elementId": "demo:SK005",
+        "proficiencyLevel": "Intermediate",
+        "yearsExperience": null,
+        "relationshipId": "demo:HAS:demo-user>SK005"
+      }
+    ],
+    "skillsWithoutCourse": []
+  },
+  "cytoscape": {
+    "nodes": [
+      {
+        "id": "demo:user:demo-user",
+        "entityId": "demo-user",
+        "type": "User",
+        "label": "Alex",
+        "properties": {
+          "user_id": "demo-user",
+          "name": "Alex"
+        },
+        "status": "user"
+      },
+      {
+        "id": "demo:R009",
+        "entityId": "R009",
+        "type": "Role",
+        "label": "AI Engineer",
+        "properties": {
+          "role_id": "R009",
+          "name": "AI Engineer",
+          "seniority": "Intermediate"
+        },
+        "status": "target"
+      },
+      {
+        "id": "demo:SK003",
+        "entityId": "SK003",
+        "type": "Skill",
+        "label": "C#",
+        "properties": {
+          "skill_id": "SK003",
+          "name": "C#",
+          "category": "Programming",
+          "level": "Intermediate"
+        },
+        "status": "existing"
+      },
+      {
+        "id": "demo:SK038",
+        "entityId": "SK038",
+        "type": "Skill",
+        "label": "Angular",
+        "properties": {
+          "skill_id": "SK038",
+          "name": "Angular",
+          "category": "Software Engineering",
+          "level": "Intermediate"
+        },
+        "status": "existing"
+      },
+      {
+        "id": "demo:SK005",
+        "entityId": "SK005",
+        "type": "Skill",
+        "label": "TypeScript",
+        "properties": {
+          "skill_id": "SK005",
+          "name": "TypeScript",
+          "category": "Programming",
+          "level": "Intermediate"
+        },
+        "status": "existing"
+      },
+      {
+        "id": "demo:SK006",
+        "entityId": "SK006",
+        "type": "Skill",
+        "label": "SQL",
+        "properties": {
+          "skill_id": "SK006",
+          "name": "SQL",
+          "category": "Data",
+          "level": "Beginner"
+        },
+        "status": "existing"
+      },
+      {
+        "id": "demo:SK024",
+        "entityId": "SK024",
+        "type": "Skill",
+        "label": "Azure",
+        "properties": {
+          "skill_id": "SK024",
+          "name": "Azure",
+          "category": "Cloud & DevOps",
+          "level": "Intermediate"
+        },
+        "status": "existing"
+      },
+      {
+        "id": "demo:SK017",
+        "entityId": "SK017",
+        "type": "Skill",
+        "label": "API Development",
+        "properties": {
+          "skill_id": "SK017",
+          "name": "API Development",
+          "category": "Software Engineering",
+          "level": "Intermediate"
+        },
+        "status": "existing"
+      },
+      {
+        "id": "demo:SK020",
+        "entityId": "SK020",
+        "type": "Skill",
+        "label": "Docker",
+        "properties": {
+          "skill_id": "SK020",
+          "name": "Docker",
+          "category": "Cloud & DevOps",
+          "level": "Intermediate"
+        },
+        "status": "existing"
+      },
+      {
+        "id": "demo:SK012",
+        "entityId": "SK012",
+        "type": "Skill",
+        "label": "Generative AI",
+        "properties": {
+          "skill_id": "SK012",
+          "name": "Generative AI",
+          "category": "AI",
+          "level": "Intermediate"
+        },
+        "status": "missing"
+      },
+      {
+        "id": "demo:SK013",
+        "entityId": "SK013",
+        "type": "Skill",
+        "label": "LLM Application Development",
+        "properties": {
+          "skill_id": "SK013",
+          "name": "LLM Application Development",
+          "category": "AI",
+          "level": "Advanced"
+        },
+        "status": "missing"
+      },
+      {
+        "id": "demo:SK014",
+        "entityId": "SK014",
+        "type": "Skill",
+        "label": "Prompt Engineering",
+        "properties": {
+          "skill_id": "SK014",
+          "name": "Prompt Engineering",
+          "category": "AI",
+          "level": "Beginner"
+        },
+        "status": "missing"
+      },
+      {
+        "id": "demo:SK002",
+        "entityId": "SK002",
+        "type": "Skill",
+        "label": "Python",
+        "properties": {
+          "skill_id": "SK002",
+          "name": "Python",
+          "category": "Programming",
+          "level": "Beginner"
+        },
+        "status": "missing"
+      },
+      {
+        "id": "demo:SK031",
+        "entityId": "SK031",
+        "type": "Skill",
+        "label": "Model Evaluation",
+        "properties": {
+          "skill_id": "SK031",
+          "name": "Model Evaluation",
+          "category": "AI",
+          "level": "Intermediate"
+        },
+        "status": "missing"
+      },
+      {
+        "id": "demo:SK010",
+        "entityId": "SK010",
+        "type": "Skill",
+        "label": "Machine Learning",
+        "properties": {
+          "skill_id": "SK010",
+          "name": "Machine Learning",
+          "category": "AI",
+          "level": "Advanced"
+        },
+        "status": "prerequisite"
+      },
+      {
+        "id": "demo:SK008",
+        "entityId": "SK008",
+        "type": "Skill",
+        "label": "Statistics",
+        "properties": {
+          "skill_id": "SK008",
+          "name": "Statistics",
+          "category": "Data",
+          "level": "Intermediate"
+        },
+        "status": "prerequisite"
+      },
+      {
+        "id": "demo:SK001",
+        "entityId": "SK001",
+        "type": "Skill",
+        "label": "Programming Fundamentals",
+        "properties": {
+          "skill_id": "SK001",
+          "name": "Programming Fundamentals",
+          "category": "Programming",
+          "level": "Beginner"
+        },
+        "status": "implied"
+      },
+      {
+        "id": "demo:C008",
+        "entityId": "C008",
+        "type": "Course",
+        "label": "Build LLM Applications",
+        "properties": {
+          "course_id": "C008",
+          "name": "Build LLM Applications",
+          "level": "Intermediate",
+          "estimated_hours": 12
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C004",
+        "entityId": "C004",
+        "type": "Course",
+        "label": "Machine Learning Foundations",
+        "properties": {
+          "course_id": "C004",
+          "name": "Machine Learning Foundations",
+          "level": "Intermediate",
+          "estimated_hours": 18
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C017",
+        "entityId": "C017",
+        "type": "Course",
+        "label": "MLOps in Practice",
+        "properties": {
+          "course_id": "C017",
+          "name": "MLOps in Practice",
+          "level": "Advanced",
+          "estimated_hours": 14
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C015",
+        "entityId": "C015",
+        "type": "Course",
+        "label": "Data Engineering Foundations",
+        "properties": {
+          "course_id": "C015",
+          "name": "Data Engineering Foundations",
+          "level": "Intermediate",
+          "estimated_hours": 12
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C005",
+        "entityId": "C005",
+        "type": "Course",
+        "label": "Deep Learning Essentials",
+        "properties": {
+          "course_id": "C005",
+          "name": "Deep Learning Essentials",
+          "level": "Advanced",
+          "estimated_hours": 16
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C006",
+        "entityId": "C006",
+        "type": "Course",
+        "label": "Generative AI Fundamentals",
+        "properties": {
+          "course_id": "C006",
+          "name": "Generative AI Fundamentals",
+          "level": "Beginner",
+          "estimated_hours": 6
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C003",
+        "entityId": "C003",
+        "type": "Course",
+        "label": "Practical Statistics",
+        "properties": {
+          "course_id": "C003",
+          "name": "Practical Statistics",
+          "level": "Intermediate",
+          "estimated_hours": 8
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C007",
+        "entityId": "C007",
+        "type": "Course",
+        "label": "Prompt Engineering Workshop",
+        "properties": {
+          "course_id": "C007",
+          "name": "Prompt Engineering Workshop",
+          "level": "Beginner",
+          "estimated_hours": 4
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C001",
+        "entityId": "C001",
+        "type": "Course",
+        "label": "Python for Developers",
+        "properties": {
+          "course_id": "C001",
+          "name": "Python for Developers",
+          "level": "Beginner",
+          "estimated_hours": 8
+        },
+        "status": "course"
+      },
+      {
+        "id": "demo:C009",
+        "entityId": "C009",
+        "type": "Course",
+        "label": "RAG Application Development",
+        "properties": {
+          "course_id": "C009",
+          "name": "RAG Application Development",
+          "level": "Advanced",
+          "estimated_hours": 12
+        },
+        "status": "course"
+      }
+    ],
+    "edges": [
+      {
+        "id": "demo:HAS:SK003",
+        "source": "demo:user:demo-user",
+        "target": "demo:SK003",
+        "type": "HAS_SKILL",
+        "properties": {}
+      },
+      {
+        "id": "demo:HAS:SK038",
+        "source": "demo:user:demo-user",
+        "target": "demo:SK038",
+        "type": "HAS_SKILL",
+        "properties": {}
+      },
+      {
+        "id": "demo:HAS:SK005",
+        "source": "demo:user:demo-user",
+        "target": "demo:SK005",
+        "type": "HAS_SKILL",
+        "properties": {}
+      },
+      {
+        "id": "demo:HAS:SK006",
+        "source": "demo:user:demo-user",
+        "target": "demo:SK006",
+        "type": "HAS_SKILL",
+        "properties": {}
+      },
+      {
+        "id": "demo:HAS:SK024",
+        "source": "demo:user:demo-user",
+        "target": "demo:SK024",
+        "type": "HAS_SKILL",
+        "properties": {}
+      },
+      {
+        "id": "demo:HAS:SK017",
+        "source": "demo:user:demo-user",
+        "target": "demo:SK017",
+        "type": "HAS_SKILL",
+        "properties": {}
+      },
+      {
+        "id": "demo:HAS:SK020",
+        "source": "demo:user:demo-user",
+        "target": "demo:SK020",
+        "type": "HAS_SKILL",
+        "properties": {}
+      },
+      {
+        "id": "demo:REQ:R009>SK017",
+        "source": "demo:R009",
+        "target": "demo:SK017",
+        "type": "REQUIRES_SKILL",
+        "properties": {
+          "importance": "Required"
+        }
+      },
+      {
+        "id": "demo:REQ:R009>SK012",
+        "source": "demo:R009",
+        "target": "demo:SK012",
+        "type": "REQUIRES_SKILL",
+        "properties": {
+          "importance": "Required"
+        }
+      },
+      {
+        "id": "demo:REQ:R009>SK013",
+        "source": "demo:R009",
+        "target": "demo:SK013",
+        "type": "REQUIRES_SKILL",
+        "properties": {
+          "importance": "Required"
+        }
+      },
+      {
+        "id": "demo:REQ:R009>SK014",
+        "source": "demo:R009",
+        "target": "demo:SK014",
+        "type": "REQUIRES_SKILL",
+        "properties": {
+          "importance": "Required"
+        }
+      },
+      {
+        "id": "demo:REQ:R009>SK002",
+        "source": "demo:R009",
+        "target": "demo:SK002",
+        "type": "REQUIRES_SKILL",
+        "properties": {
+          "importance": "Required"
+        }
+      },
+      {
+        "id": "demo:REQ:R009>SK031",
+        "source": "demo:R009",
+        "target": "demo:SK031",
+        "type": "REQUIRES_SKILL",
+        "properties": {
+          "importance": "Recommended"
+        }
+      },
+      {
+        "id": "demo:PRE:SK010>SK012",
+        "source": "demo:SK010",
+        "target": "demo:SK012",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:PRE:SK012>SK013",
+        "source": "demo:SK012",
+        "target": "demo:SK013",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:PRE:SK014>SK013",
+        "source": "demo:SK014",
+        "target": "demo:SK013",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:PRE:SK002>SK010",
+        "source": "demo:SK002",
+        "target": "demo:SK010",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:PRE:SK008>SK010",
+        "source": "demo:SK008",
+        "target": "demo:SK010",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:PRE:SK013>SK031",
+        "source": "demo:SK013",
+        "target": "demo:SK031",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:PRE:SK010>SK031",
+        "source": "demo:SK010",
+        "target": "demo:SK031",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:PRE:SK001>SK002",
+        "source": "demo:SK001",
+        "target": "demo:SK002",
+        "type": "PREREQUISITE_FOR",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C008>SK012",
+        "source": "demo:C008",
+        "target": "demo:SK012",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C008>SK013",
+        "source": "demo:C008",
+        "target": "demo:SK013",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C004>SK008",
+        "source": "demo:C004",
+        "target": "demo:SK008",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C004>SK010",
+        "source": "demo:C004",
+        "target": "demo:SK010",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C017>SK010",
+        "source": "demo:C017",
+        "target": "demo:SK010",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C017>SK031",
+        "source": "demo:C017",
+        "target": "demo:SK031",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C015>SK002",
+        "source": "demo:C015",
+        "target": "demo:SK002",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C005>SK010",
+        "source": "demo:C005",
+        "target": "demo:SK010",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C006>SK012",
+        "source": "demo:C006",
+        "target": "demo:SK012",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C003>SK008",
+        "source": "demo:C003",
+        "target": "demo:SK008",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C007>SK014",
+        "source": "demo:C007",
+        "target": "demo:SK014",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C001>SK002",
+        "source": "demo:C001",
+        "target": "demo:SK002",
+        "type": "TEACHES",
+        "properties": {}
+      },
+      {
+        "id": "demo:TEACH:C009>SK013",
+        "source": "demo:C009",
+        "target": "demo:SK013",
+        "type": "TEACHES",
+        "properties": {}
+      }
+    ]
+  },
+  "summary": {
+    "requiredSkillCount": 6,
+    "matchedSkillCount": 1,
+    "missingSkillCount": 5,
+    "gapSkillCount": 7,
+    "matchPercentage": 17
+  },
+  "insight": {
+    "insight": {
+      "careerSummary": "Alex has nine years of full stack experience and already covers the API side of the AI Engineer role. The gap is the machine learning and generative AI stack: Python, Machine Learning, Generative AI, Prompt Engineering, LLM Application Development and Model Evaluation. The graph shows these form one connected chain, so the path is clear and achievable.",
+      "targetRole": "AI Engineer",
+      "strengths": [
+        {
+          "skill": "API Development",
+          "reason": "Required by the AI Engineer role and already in your skill set, so you can expose models as services from day one."
+        },
+        {
+          "skill": "TypeScript",
+          "reason": "Strong typed-language background makes Python and structured LLM output handling quicker to pick up."
+        },
+        {
+          "skill": "Azure",
+          "reason": "Cloud deployment experience carries over to hosting and operating AI services."
+        },
+        {
+          "skill": "SQL",
+          "reason": "Data querying experience helps with the Statistics and Machine Learning foundations."
+        }
+      ],
+      "skillExplanations": [
+        {
+          "skill": "Python",
+          "reason": "Required for the role and a prerequisite of Machine Learning in the graph.",
+          "priority": "high"
+        },
+        {
+          "skill": "Statistics",
+          "reason": "A prerequisite of Machine Learning that you do not yet have.",
+          "priority": "medium"
+        },
+        {
+          "skill": "Machine Learning",
+          "reason": "The bridge skill: Generative AI and Model Evaluation both depend on it in the graph.",
+          "priority": "high"
+        },
+        {
+          "skill": "Generative AI",
+          "reason": "Required for the role and a prerequisite of LLM Application Development.",
+          "priority": "high"
+        },
+        {
+          "skill": "Prompt Engineering",
+          "reason": "Required for the role, quick to learn and a direct prerequisite of LLM Application Development.",
+          "priority": "medium"
+        },
+        {
+          "skill": "LLM Application Development",
+          "reason": "The core capability of the AI Engineer role, building on Generative AI and Prompt Engineering.",
+          "priority": "high"
+        },
+        {
+          "skill": "Model Evaluation",
+          "reason": "Recommended for the role and depends on both LLM Application Development and Machine Learning.",
+          "priority": "low"
+        }
+      ],
+      "learningPriorities": [
+        {
+          "skill": "Prompt Engineering",
+          "rationale": "Short course with immediate payoff and no prerequisites.",
+          "course": "Prompt Engineering Workshop"
+        },
+        {
+          "skill": "Python",
+          "rationale": "Unlocks Machine Learning; your existing programming background makes this fast.",
+          "course": "Python for Developers"
+        },
+        {
+          "skill": "Statistics",
+          "rationale": "Needed alongside Python before Machine Learning.",
+          "course": "Practical Statistics"
+        },
+        {
+          "skill": "Machine Learning",
+          "rationale": "Central dependency for the generative AI skills that follow.",
+          "course": "Machine Learning Foundations"
+        },
+        {
+          "skill": "Generative AI",
+          "rationale": "Builds directly on Machine Learning.",
+          "course": "Generative AI Fundamentals"
+        },
+        {
+          "skill": "LLM Application Development",
+          "rationale": "The role-defining skill, learnt once its prerequisites are in place.",
+          "course": "Build LLM Applications"
+        },
+        {
+          "skill": "Model Evaluation",
+          "rationale": "Last step: it depends on the skills before it.",
+          "course": "MLOps in Practice"
+        }
+      ],
+      "sequenceExplanation": "The order follows prerequisite relationships in the graph: Python and Statistics lead to Machine Learning, which leads to Generative AI. Prompt Engineering and Generative AI both lead to LLM Application Development, which comes before Model Evaluation.",
+      "certificationAdvice": [
+        {
+          "certification": "Databricks Generative AI Engineer Associate",
+          "reason": "Validates the generative AI skills at the end of this path."
+        },
+        {
+          "certification": "Azure Developer Associate",
+          "reason": "Already validates your Azure and API Development experience."
+        }
+      ],
+      "careerAdvice": [
+        "Start with Prompt Engineering and Python in parallel; both have no unmet prerequisites.",
+        "Reuse your API Development strength by wrapping each project in a small service.",
+        "Treat the Machine Learning step as the main milestone: it unlocks most of the remaining skills."
+      ],
+      "roadmapSummary": "Foundations first (Python, Statistics, Prompt Engineering), then Machine Learning and Generative AI, then LLM Application Development and Model Evaluation.",
+      "phaseDescriptions": {
+        "foundations": "Python, Statistics and Prompt Engineering have no unmet prerequisites and can start immediately.",
+        "core": "Machine Learning is the central step that the generative AI skills depend on.",
+        "advanced": "Generative AI and LLM Application Development build on the core.",
+        "practical": "Model Evaluation closes the loop by measuring the applications you build."
+      }
+    },
+    "model": "demo-fixture",
+    "durationMs": 0,
+    "attempts": 0,
+    "droppedEntities": [],
+    "repaired": false
+  },
+  "computation": {
+    "executionStatus": "completed",
+    "targetRole": "AI Engineer",
+    "matchPercentage": 16.7,
+    "weightedMatchPercentage": 18.2,
+    "requiredSkillCount": 6,
+    "matchedSkillCount": 1,
+    "missingSkillCount": 5,
+    "gapSkillCount": 7,
+    "estimatedLearningHours": 62,
+    "estimatedWeeks": 8,
+    "learningHoursPerWeek": 8,
+    "estimatedHoursFromCourses": 62,
+    "estimatedHoursFromDefaults": 0,
+    "prioritySkills": [
+      {
+        "skillId": "SK008",
+        "skill": "Statistics",
+        "score": 100,
+        "priority": "high",
+        "kind": "prerequisite"
+      },
+      {
+        "skillId": "SK010",
+        "skill": "Machine Learning",
+        "score": 84.1,
+        "priority": "high",
+        "kind": "prerequisite"
+      },
+      {
+        "skillId": "SK002",
+        "skill": "Python",
+        "score": 75.4,
+        "priority": "high",
+        "kind": "missing"
+      },
+      {
+        "skillId": "SK014",
+        "skill": "Prompt Engineering",
+        "score": 52.2,
+        "priority": "medium",
+        "kind": "missing"
+      },
+      {
+        "skillId": "SK012",
+        "skill": "Generative AI",
+        "score": 47.8,
+        "priority": "medium",
+        "kind": "missing"
+      },
+      {
+        "skillId": "SK013",
+        "skill": "LLM Application Development",
+        "score": 31.9,
+        "priority": "low",
+        "kind": "missing"
+      },
+      {
+        "skillId": "SK031",
+        "skill": "Model Evaluation",
+        "score": 24.6,
+        "priority": "low",
+        "kind": "missing"
+      }
+    ],
+    "roadmap": [
+      {
+        "order": 1,
+        "skillId": "SK008",
+        "skill": "Statistics",
+        "category": "Data",
+        "level": "Intermediate",
+        "kind": "prerequisite",
+        "phase": 2,
+        "phaseName": "Core skills",
+        "priorityScore": 100,
+        "priority": "high",
+        "difficulty": "Intermediate",
+        "hours": 8,
+        "hoursSource": "course",
+        "courseId": "C003",
+        "course": "Practical Statistics",
+        "prerequisiteIds": [],
+        "prerequisites": [],
+        "unitId": "U4",
+        "inCycle": false
+      },
+      {
+        "order": 2,
+        "skillId": "SK002",
+        "skill": "Python",
+        "category": "Programming",
+        "level": "Beginner",
+        "kind": "missing",
+        "phase": 2,
+        "phaseName": "Core skills",
+        "priorityScore": 75.4,
+        "priority": "high",
+        "difficulty": "Beginner",
+        "hours": 8,
+        "hoursSource": "course",
+        "courseId": "C001",
+        "course": "Python for Developers",
+        "prerequisiteIds": [],
+        "prerequisites": [],
+        "unitId": "U3",
+        "inCycle": false
+      },
+      {
+        "order": 3,
+        "skillId": "SK010",
+        "skill": "Machine Learning",
+        "category": "AI",
+        "level": "Advanced",
+        "kind": "prerequisite",
+        "phase": 3,
+        "phaseName": "Advanced skills",
+        "priorityScore": 84.1,
+        "priority": "high",
+        "difficulty": "Advanced",
+        "hours": 16,
+        "hoursSource": "course",
+        "courseId": "C005",
+        "course": "Deep Learning Essentials",
+        "prerequisiteIds": [
+          "SK008",
+          "SK002"
+        ],
+        "prerequisites": [
+          "Statistics",
+          "Python"
+        ],
+        "unitId": "U5",
+        "inCycle": false
+      },
+      {
+        "order": 4,
+        "skillId": "SK014",
+        "skill": "Prompt Engineering",
+        "category": "AI",
+        "level": "Beginner",
+        "kind": "missing",
+        "phase": 3,
+        "phaseName": "Advanced skills",
+        "priorityScore": 52.2,
+        "priority": "medium",
+        "difficulty": "Beginner",
+        "hours": 4,
+        "hoursSource": "course",
+        "courseId": "C007",
+        "course": "Prompt Engineering Workshop",
+        "prerequisiteIds": [],
+        "prerequisites": [],
+        "unitId": "U1",
+        "inCycle": false
+      },
+      {
+        "order": 5,
+        "skillId": "SK012",
+        "skill": "Generative AI",
+        "category": "AI",
+        "level": "Intermediate",
+        "kind": "missing",
+        "phase": 3,
+        "phaseName": "Advanced skills",
+        "priorityScore": 47.8,
+        "priority": "medium",
+        "difficulty": "Intermediate",
+        "hours": 6,
+        "hoursSource": "course",
+        "courseId": "C008",
+        "course": "Build LLM Applications",
+        "prerequisiteIds": [
+          "SK010"
+        ],
+        "prerequisites": [
+          "Machine Learning"
+        ],
+        "unitId": "U2",
+        "inCycle": false
+      },
+      {
+        "order": 6,
+        "skillId": "SK013",
+        "skill": "LLM Application Development",
+        "category": "AI",
+        "level": "Advanced",
+        "kind": "missing",
+        "phase": 3,
+        "phaseName": "Advanced skills",
+        "priorityScore": 31.9,
+        "priority": "low",
+        "difficulty": "Advanced",
+        "hours": 6,
+        "hoursSource": "course",
+        "courseId": "C008",
+        "course": "Build LLM Applications",
+        "prerequisiteIds": [
+          "SK014",
+          "SK012"
+        ],
+        "prerequisites": [
+          "Prompt Engineering",
+          "Generative AI"
+        ],
+        "unitId": "U2",
+        "inCycle": false
+      },
+      {
+        "order": 7,
+        "skillId": "SK031",
+        "skill": "Model Evaluation",
+        "category": "AI",
+        "level": "Intermediate",
+        "kind": "missing",
+        "phase": 4,
+        "phaseName": "Practical application",
+        "priorityScore": 24.6,
+        "priority": "low",
+        "difficulty": "Intermediate",
+        "hours": 14,
+        "hoursSource": "course",
+        "courseId": "C017",
+        "course": "MLOps in Practice",
+        "prerequisiteIds": [
+          "SK010",
+          "SK013"
+        ],
+        "prerequisites": [
+          "Machine Learning",
+          "LLM Application Development"
+        ],
+        "unitId": "U6",
+        "inCycle": false
+      }
+    ],
+    "phases": [
+      {
+        "phase": 2,
+        "name": "Core skills",
+        "skills": [
+          "Statistics",
+          "Python"
+        ],
+        "hours": 16
+      },
+      {
+        "phase": 3,
+        "name": "Advanced skills",
+        "skills": [
+          "Machine Learning",
+          "Prompt Engineering",
+          "Generative AI",
+          "LLM Application Development"
+        ],
+        "hours": 32
+      },
+      {
+        "phase": 4,
+        "name": "Practical application",
+        "skills": [
+          "Model Evaluation"
+        ],
+        "hours": 14
+      }
+    ],
+    "selectedCourses": [
+      {
+        "courseId": "C007",
+        "course": "Prompt Engineering Workshop",
+        "hours": 4,
+        "coversSkills": [
+          "Prompt Engineering"
+        ]
+      },
+      {
+        "courseId": "C008",
+        "course": "Build LLM Applications",
+        "hours": 12,
+        "coversSkills": [
+          "Generative AI",
+          "LLM Application Development"
+        ]
+      },
+      {
+        "courseId": "C001",
+        "course": "Python for Developers",
+        "hours": 8,
+        "coversSkills": [
+          "Python"
+        ]
+      },
+      {
+        "courseId": "C003",
+        "course": "Practical Statistics",
+        "hours": 8,
+        "coversSkills": [
+          "Statistics"
+        ]
+      },
+      {
+        "courseId": "C005",
+        "course": "Deep Learning Essentials",
+        "hours": 16,
+        "coversSkills": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "courseId": "C017",
+        "course": "MLOps in Practice",
+        "hours": 14,
+        "coversSkills": [
+          "Model Evaluation"
+        ]
+      }
+    ],
+    "weeklySchedule": [
+      {
+        "week": 1,
+        "hours": 8,
+        "items": [
+          {
+            "unitId": "U4",
+            "label": "Practical Statistics",
+            "course": "Practical Statistics",
+            "skills": [
+              "Statistics"
+            ],
+            "hours": 8,
+            "phase": 2
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "hours": 8,
+        "items": [
+          {
+            "unitId": "U3",
+            "label": "Python for Developers",
+            "course": "Python for Developers",
+            "skills": [
+              "Python"
+            ],
+            "hours": 8,
+            "phase": 2
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "hours": 8,
+        "items": [
+          {
+            "unitId": "U5",
+            "label": "Deep Learning Essentials",
+            "course": "Deep Learning Essentials",
+            "skills": [
+              "Machine Learning"
+            ],
+            "hours": 8,
+            "phase": 3
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "hours": 8,
+        "items": [
+          {
+            "unitId": "U5",
+            "label": "Deep Learning Essentials",
+            "course": "Deep Learning Essentials",
+            "skills": [
+              "Machine Learning"
+            ],
+            "hours": 8,
+            "phase": 3
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "hours": 8,
+        "items": [
+          {
+            "unitId": "U1",
+            "label": "Prompt Engineering Workshop",
+            "course": "Prompt Engineering Workshop",
+            "skills": [
+              "Prompt Engineering"
+            ],
+            "hours": 4,
+            "phase": 3
+          },
+          {
+            "unitId": "U2",
+            "label": "Build LLM Applications",
+            "course": "Build LLM Applications",
+            "skills": [
+              "Generative AI",
+              "LLM Application Development"
+            ],
+            "hours": 4,
+            "phase": 3
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "hours": 8,
+        "items": [
+          {
+            "unitId": "U2",
+            "label": "Build LLM Applications",
+            "course": "Build LLM Applications",
+            "skills": [
+              "Generative AI",
+              "LLM Application Development"
+            ],
+            "hours": 8,
+            "phase": 3
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "hours": 8,
+        "items": [
+          {
+            "unitId": "U6",
+            "label": "MLOps in Practice",
+            "course": "MLOps in Practice",
+            "skills": [
+              "Model Evaluation"
+            ],
+            "hours": 8,
+            "phase": 4
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "hours": 6,
+        "items": [
+          {
+            "unitId": "U6",
+            "label": "MLOps in Practice",
+            "course": "MLOps in Practice",
+            "skills": [
+              "Model Evaluation"
+            ],
+            "hours": 6,
+            "phase": 4
+          }
+        ]
+      }
+    ],
+    "validation": {
+      "valid": true,
+      "checkedEdges": 7,
+      "violations": [],
+      "cyclicSkills": [],
+      "cycleBreaks": []
+    },
+    "python": "3.12.10",
+    "computeMs": 2
+  },
+  "completedSkillIds": [],
+  "persistedTo": "memory"
+}

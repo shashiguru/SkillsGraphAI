@@ -1,0 +1,21 @@
+course_id,name,description,level,estimated_hours
+C001,Python for Developers,"Python basics, functions, data structures",Beginner,8
+C002,SQL and Relational Data,"Queries, joins and relational modeling",Beginner,6
+C003,Practical Statistics,Descriptive statistics and probability,Intermediate,8
+C004,Machine Learning Foundations,Supervised and unsupervised learning,Intermediate,18
+C005,Deep Learning Essentials,Neural networks and model training,Advanced,16
+C006,Generative AI Fundamentals,"LLMs, tokens and inference concepts",Beginner,6
+C007,Prompt Engineering Workshop,Prompt patterns and structured outputs,Beginner,4
+C008,Build LLM Applications,"LLM APIs, tool calling and app patterns",Intermediate,12
+C009,RAG Application Development,"Embeddings, retrieval and grounding",Advanced,12
+C010,Vector Search Fundamentals,Embeddings and vector similarity search,Intermediate,6
+C011,Docker for Developers,Container images and local workflows,Intermediate,6
+C012,Kubernetes Foundations,"Deployments, services and scaling",Advanced,14
+C013,Cloud Fundamentals,"Cloud concepts, identity and networking",Beginner,8
+C014,Azure Developer Path,Build and deploy applications on Azure,Intermediate,16
+C015,Data Engineering Foundations,"Data pipelines, ingestion and quality",Intermediate,12
+C016,Spark and Databricks,Distributed processing and lakehouse concepts,Advanced,16
+C017,MLOps in Practice,"Model deployment, monitoring and lifecycle",Advanced,14
+C018,System Design for Engineers,"Scalability, APIs and architecture trade-offs",Advanced,10
+C019,Modern Frontend Development,Component-based frontend development,Intermediate,12
+C020,Backend API Engineering,"REST APIs, authentication and persistence",Intermediate,12

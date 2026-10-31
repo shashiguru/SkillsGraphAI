@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+.vite/
+*.tsbuildinfo
+.DS_Store
+SkillGraph_Neo4j_Starter_Dataset.zip.bak

@@ -1,0 +1,11 @@
+cert_id,name,validates_skills
+CERT001,Microsoft Azure Fundamentals,Cloud Fundamentals;Azure
+CERT002,Azure Developer Associate,Azure;API Development;Cloud Fundamentals
+CERT003,AWS Certified Cloud Practitioner,Cloud Fundamentals;AWS
+CERT004,AWS Solutions Architect Associate,AWS;System Design;Cloud Fundamentals
+CERT005,Databricks Data Engineer Associate,Databricks;Spark;Data Engineering
+CERT006,Databricks Generative AI Engineer Associate,Generative AI;LLM Application Development
+CERT007,Kubernetes and Cloud Native Associate,Kubernetes;Docker;Networking Fundamentals
+CERT008,TensorFlow Developer Certificate (sample pathway),Python;Machine Learning;Deep Learning
+CERT009,Professional Scrum Master I,Agile Delivery
+CERT010,Neo4j Certified Professional (learning pathway),Data Modeling;SQL

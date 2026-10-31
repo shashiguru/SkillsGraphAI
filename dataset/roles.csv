@@ -1,0 +1,13 @@
+role_id,name,description,seniority
+R001,Full Stack Developer,Builds frontend and backend applications,Intermediate
+R002,Backend Engineer,Builds APIs and server-side systems,Intermediate
+R003,Frontend Engineer,Builds user-facing web applications,Intermediate
+R004,Cloud Engineer,Designs and operates cloud infrastructure,Intermediate
+R005,DevOps Engineer,Automates software delivery and infrastructure,Advanced
+R006,Data Analyst,Turns data into insights and reports,Beginner
+R007,Data Engineer,Builds reliable data pipelines and platforms,Advanced
+R008,Machine Learning Engineer,Builds and deploys machine learning systems,Advanced
+R009,AI Engineer,Builds applications powered by AI and language models,Intermediate
+R010,Generative AI Engineer,Builds LLM-powered products and workflows,Advanced
+R011,MLOps Engineer,Operates and monitors ML systems in production,Advanced
+R012,Solutions Architect,Designs end-to-end technical solutions,Advanced

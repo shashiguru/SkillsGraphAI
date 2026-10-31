@@ -1,0 +1,25 @@
+cert_id,skill_name
+CERT001,Cloud Fundamentals
+CERT001,Azure
+CERT002,Azure
+CERT002,API Development
+CERT002,Cloud Fundamentals
+CERT003,Cloud Fundamentals
+CERT003,AWS
+CERT004,AWS
+CERT004,System Design
+CERT004,Cloud Fundamentals
+CERT005,Databricks
+CERT005,Spark
+CERT005,Data Engineering
+CERT006,Generative AI
+CERT006,LLM Application Development
+CERT007,Kubernetes
+CERT007,Docker
+CERT007,Networking Fundamentals
+CERT008,Python
+CERT008,Machine Learning
+CERT008,Deep Learning
+CERT009,Agile Delivery
+CERT010,Data Modeling
+CERT010,SQL

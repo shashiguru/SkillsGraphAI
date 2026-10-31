@@ -1,0 +1,11 @@
+role_id,related_role_id,relationship_type
+R001,R009,Adjacent transition
+R002,R009,Adjacent transition
+R007,R008,Adjacent transition
+R008,R011,Adjacent transition
+R009,R010,Specialization
+R004,R005,Adjacent transition
+R001,R002,Related role
+R001,R003,Related role
+R004,R012,Career progression
+R007,R011,Adjacent transition

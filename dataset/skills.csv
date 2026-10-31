@@ -1,0 +1,41 @@
+skill_id,name,category,level
+SK001,Programming Fundamentals,Programming,Beginner
+SK002,Python,Programming,Beginner
+SK003,C#,Programming,Intermediate
+SK004,JavaScript,Programming,Intermediate
+SK005,TypeScript,Programming,Intermediate
+SK006,SQL,Data,Beginner
+SK007,Data Modeling,Data,Intermediate
+SK008,Statistics,Data,Intermediate
+SK009,Data Analysis,Data,Intermediate
+SK010,Machine Learning,AI,Advanced
+SK011,Deep Learning,AI,Advanced
+SK012,Generative AI,AI,Intermediate
+SK013,LLM Application Development,AI,Advanced
+SK014,Prompt Engineering,AI,Beginner
+SK015,RAG Systems,AI,Advanced
+SK016,Vector Databases,Data,Intermediate
+SK017,API Development,Software Engineering,Intermediate
+SK018,System Design,Software Engineering,Advanced
+SK019,Git,Tools,Beginner
+SK020,Docker,Cloud & DevOps,Intermediate
+SK021,Kubernetes,Cloud & DevOps,Advanced
+SK022,CI/CD,Cloud & DevOps,Intermediate
+SK023,Cloud Fundamentals,Cloud & DevOps,Beginner
+SK024,Azure,Cloud & DevOps,Intermediate
+SK025,AWS,Cloud & DevOps,Intermediate
+SK026,Data Engineering,Data,Advanced
+SK027,ETL Pipelines,Data,Intermediate
+SK028,Spark,Data,Advanced
+SK029,Databricks,Data,Advanced
+SK030,MLOps,AI,Advanced
+SK031,Model Evaluation,AI,Intermediate
+SK032,Cybersecurity Fundamentals,Security,Beginner
+SK033,Networking Fundamentals,Infrastructure,Beginner
+SK034,Frontend Development,Software Engineering,Intermediate
+SK035,Backend Development,Software Engineering,Intermediate
+SK036,HTML & CSS,Software Engineering,Beginner
+SK037,React,Software Engineering,Intermediate
+SK038,Angular,Software Engineering,Intermediate
+SK039,Observability,Cloud & DevOps,Intermediate
+SK040,Agile Delivery,Ways of Working,Beginner
